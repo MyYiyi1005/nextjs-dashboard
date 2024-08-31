@@ -447,12 +447,43 @@ export default function NavLinks() {
 
 ## Git上传到Github
 
-添加gitbash终端，进入到本项目目录nextjs/nextjs-dashboard；
+1. 添加gitbash终端，进入到本项目目录nextjs/nextjs-dashboard；
+2. 执行 $ git init 初始化；$
+3. $本地所有文件添加到暂管取，命令：`$ git add .`
+4. 将暂存区的文件提交到本地仓库，命令：**git** commit -m **"注释说明"**
+5. 在https://github.com/ 创建远程仓库；
 
-执行 $ git init 初始化；
+   ![1725066206424](image/README/1725066206424.png)
+6. 将本地仓库关联到github
 
+   ```bash
+   git remote add origin https://github.com/MyYiyi1005/nextjs-dashboard.git
+   ```
+7. 本地仓库上传到github仓库
 
+   ```bash
+   git push -u origin master
+   ```
 
+   执行完之后如果无错误就上传成功了，需要提示的是这里的 master 是 github默认的分支。
+
+## Vercel
+
+创建Vercel。访问 [vercel.com/signup](https://vercel.com/signup) 创建帐户。选择免费的“hobby”计划。选择  **Continue with GitHub （继续使用 GitHub** ） 以连接您的 GitHub 和 Vercel 帐户。
+
+注册，需要准备电话号码，中国的也支持。
+
+### 连接到github中的项目
+
+接下来，您将被带到此屏幕，您可以在其中选择并**导入**您刚刚创建的 GitHub 存储库：
+
+![1725067506343](image/README/1725067506343.png)
+
+点击Install，输入Github的密码，关联上仓库中的项目了。
+
+![1725067724052](image/README/1725067724052.png)
+
+为您的项目命名，然后单击  **Deploy （部署** ）。
 
 
 ## 设置数据库
